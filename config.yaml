@@ -1,0 +1,52 @@
+# Data Configuration
+data:
+  raw_path: "data/raw/superstore_sales.csv"
+  processed_path: "data/processed/cleaned_sales.csv"
+  database_path: "data/sales_analytics.db"
+  
+# Database Configuration
+database:
+  type: "postgresql"
+  name: "sales_analytics"
+  tables:
+    sales: "sales_data"
+    customers: "customer_data"
+    products: "product_data"
+    
+# Pipeline Configuration
+pipeline:
+  batch_size: 10000
+  validate_data: true
+  backup_raw: true
+  
+# Analysis Configuration
+analysis:
+  date_column: "Order Date"
+  sales_column: "Sales"
+  profit_column: "Profit"
+  customer_column: "Customer ID"
+  
+# Dashboard Configuration
+dashboard:
+  title: "Sales Analytics Dashboard"
+  theme: "light"
+  refresh_rate: 3600  # seconds
+  
+# Logging Configuration
+logging:
+  level: INFO
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name}:{line} | {message}"
+  file: logs/sales_analytics.log
+  
+# Feature Engineering
+features:
+  date_features:
+    - year
+    - month
+    - quarter
+    - day_of_week
+    - is_weekend
+  derived_features:
+    - profit_margin
+    - discount_amount
+    - shipping_days
