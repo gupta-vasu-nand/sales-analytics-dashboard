@@ -164,25 +164,25 @@ Key capabilities include:
 
 ## Main Dashboard Overview
 
-![Dashboard Overview](assets/images/dashboard_overview.png)
+![Dashboard Overview](assets/overview.png)
 
 ---
 
 ## Monthly Sales Trends
 
-![Sales Trends](assets/images/sales_trend.png)
+![Sales Trends](assets/sales_trend.png)
 
 ---
 
 ## Customer Segmentation
 
-![Customer Segmentation](assets/images/customer_segmentation.png)
+![Customer Segmentation](assets/customer_segmentation.png)
 
 ---
 
 ## Product Performance Analysis
 
-![Product Performance](assets/images/product_performance.png)
+![Product Performance](assets/product_performance.png)
 
 ---
 
